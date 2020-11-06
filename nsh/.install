@@ -1,0 +1,5 @@
+if not install.root or #install.root == 0 then
+	install.root = "usr"
+end
+
+os.execute(install.from:gsub("//","/") .. "usr/bin/nsh install --iKnowWhatIAmDoing -f nsh " .. to_path .. install.root:gsub("//","/"))
